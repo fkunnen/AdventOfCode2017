@@ -46,7 +46,7 @@ public class Day3Test {
 
     @Test
     public void manhattanDistance() {
-        System.out.println(day3.manhattanDistance(325489L));
+        System.out.println("Day 3 part 1: " + day3.manhattanDistance(325489L));
     }
 
     @Test

@@ -23,7 +23,7 @@ public class Day2Test {
 
     @Test
     public void checksumMaxMinDifference() {
-        System.out.println(day2.checksumMaxMinDifference(
+        System.out.println("Day 2 part 1: " + day2.checksumMaxMinDifference(
                 "4168\t3925\t858\t2203\t440\t185\t2886\t160\t1811\t4272\t4333\t2180\t174\t157\t361\t1555\n" +
                         "150\t111\t188\t130\t98\t673\t408\t632\t771\t585\t191\t92\t622\t158\t537\t142\n" +
                         "5785\t5174\t1304\t3369\t3891\t131\t141\t5781\t5543\t4919\t478\t6585\t116\t520\t673\t112\n" +
@@ -56,8 +56,8 @@ public class Day2Test {
     }
 
     @Test
-    public void checkSumDivideDisibles() {
-        System.out.println(day2.checksumDivisionDivisibles(
+    public void checkSumDivideDivisibles() {
+        System.out.println("Day 2 part 2: " + day2.checksumDivisionDivisibles(
                 "4168\t3925\t858\t2203\t440\t185\t2886\t160\t1811\t4272\t4333\t2180\t174\t157\t361\t1555\n" +
                         "150\t111\t188\t130\t98\t673\t408\t632\t771\t585\t191\t92\t622\t158\t537\t142\n" +
                         "5785\t5174\t1304\t3369\t3891\t131\t141\t5781\t5543\t4919\t478\t6585\t116\t520\t673\t112\n" +

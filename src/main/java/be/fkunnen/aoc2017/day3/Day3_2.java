@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static be.fkunnen.aoc2017.day3.Direction.*;
+import static be.fkunnen.aoc2017.day3.Direction.EAST;
+import static be.fkunnen.aoc2017.day3.Direction.turnLeft;
 import static java.lang.Math.abs;
 
 public class Day3_2 {

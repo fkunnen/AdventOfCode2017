@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-import static be.fkunnen.aoc2017.day3.Direction.EAST;
-import static be.fkunnen.aoc2017.day3.Direction.NORTH;
-import static be.fkunnen.aoc2017.day3.Direction.SOUTH;
+import static be.fkunnen.aoc2017.day3.Direction.*;
 
 public class Point {
 

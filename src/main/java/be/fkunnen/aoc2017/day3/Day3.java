@@ -1,15 +1,17 @@
 package be.fkunnen.aoc2017.day3;
 
 
+import static java.lang.Math.*;
+
 public class Day3 {
 
     static final Point POINT_NUMBER_1_IN_SPIRAL = new Point(0, 0);
 
 
     public int manhattanDistance(long numberInSpiral) {
-        long maxNumberOnThisLevelInSpiral = closestNumberlargerThanNumberInSpiralThatHasAnOddIntegerSquareRoot(numberInSpiral);
+        long maxNumberOnThisLevelInSpiral = closestNumberLargerThanNumberInSpiralThatHasAnOddIntegerSquareRoot(numberInSpiral);
 
-        int minimumDistance = (int) ((Math.sqrt(maxNumberOnThisLevelInSpiral) - 1) / 2);
+        int minimumDistance = (int) ((sqrt(maxNumberOnThisLevelInSpiral) - 1) / 2);
 
         // The point location of maxNumberOnThisLevelInSpiral is now new Point(minimumDistance, -minimumDistance)
         int x = minimumDistance;
@@ -35,13 +37,13 @@ public class Day3 {
             }
         }
 
-        Point pointGivenOfNumberInSpiral = new Point(x, y);
+        Point pointOfNumberInSpiral = new Point(x, y);
 
-        return manhattanDistance(POINT_NUMBER_1_IN_SPIRAL, pointGivenOfNumberInSpiral);
+        return manhattanDistance(POINT_NUMBER_1_IN_SPIRAL, pointOfNumberInSpiral);
     }
 
-    private long closestNumberlargerThanNumberInSpiralThatHasAnOddIntegerSquareRoot(long numberInSpiral) {
-        double squareRoot = (long) Math.ceil(Math.sqrt(numberInSpiral));
+    private long closestNumberLargerThanNumberInSpiralThatHasAnOddIntegerSquareRoot(long numberInSpiral) {
+        double squareRoot = (long) ceil(sqrt(numberInSpiral));
 
         if (squareRoot % 2 == 0){
             squareRoot++;
@@ -51,7 +53,7 @@ public class Day3 {
     }
 
     public int manhattanDistance(Point point1, Point point2){
-        return (int) (Math.abs(point1.getX() - point2.getX()) + Math.abs(point1.getY() - point2.getY()));
+        return abs(point1.getX() - point2.getX()) + abs(point1.getY() - point2.getY());
     }
 
 }

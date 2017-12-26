@@ -556,6 +556,6 @@ public class Day4Test {
                 "dflx gdtb jyoj jyoj dflx aqhycgi xffnn\n" +
                 "inc mpys mzqmcwx vryz ibqrzc pmsy fat rojpxwy rcbqzi gjef";
 
-        System.out.println(day4.numberOfValidPassphrases(input));
+        System.out.println("Day 4 part 1: " + day4.numberOfValidPassphrases(input));
     }
 }

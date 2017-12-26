@@ -10,7 +10,7 @@ public class Day3_2Test {
 
     @Test
     public void spiralSumAdjacentSquares(){
-        System.out.println(day3_2.spiralSumAdjacentSquares(325489L));
+        System.out.println("Day 3 part 2: " + day3_2.spiralSumAdjacentSquares(325489L));
     }
 
     @Test
