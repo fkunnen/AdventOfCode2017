@@ -24,7 +24,7 @@ public class Day3_2 {
         while (sum < input){
             point = point.nextPoint(currentDirection);
 
-            sum = sumOfNeighboringPoints(point, pointsToSumsMap);
+            sum = sumOfNeighbourPoints(point, pointsToSumsMap);
             pointsToSumsMap.put(point, sum);
 
             if (doINeedToMakeATurnInTheSpiral(point)){
@@ -35,13 +35,13 @@ public class Day3_2 {
         return sum;
     }
 
-    private long sumOfNeighboringPoints(Point point, Map<Point, Long> pointsToSumsMap) {
-        List<Point> neighboringPoints = point.neighbouringPoints();
+    private long sumOfNeighbourPoints(Point point, Map<Point, Long> pointsToSumsMap) {
+        List<Point> neighbourPoints = point.neighbourPoints();
 
         long sum = 0;
-        for (Point neighboringPoint : neighboringPoints){
-            if (pointsToSumsMap.containsKey(neighboringPoint)){
-                sum += pointsToSumsMap.get(neighboringPoint);
+        for (Point neighbourPoint : neighbourPoints){
+            if (pointsToSumsMap.containsKey(neighbourPoint)){
+                sum += pointsToSumsMap.get(neighbourPoint);
             }
         }
 

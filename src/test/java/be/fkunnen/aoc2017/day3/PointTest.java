@@ -46,12 +46,12 @@ public class PointTest {
     }
 
     @Test
-    public void neighbouringPoints() {
+    public void neighbourPoints() {
         Point point = new Point(1, -4);
 
-        List<Point> neighboringPoints = point.neighbouringPoints();
+        List<Point> neighbourPoints = point.neighbourPoints();
 
-        assertThat(neighboringPoints).containsExactlyInAnyOrder(getExpectedPoints());
+        assertThat(neighbourPoints).containsExactlyInAnyOrder(getExpectedPoints());
 
     }
 

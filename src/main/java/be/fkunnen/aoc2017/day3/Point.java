@@ -39,7 +39,7 @@ public class Point {
         }
     }
 
-    public List<Point> neighbouringPoints(){
+    public List<Point> neighbourPoints(){
         return Arrays.asList(
                 new Point(x+1, y),
                 new Point(x+1,y+1),

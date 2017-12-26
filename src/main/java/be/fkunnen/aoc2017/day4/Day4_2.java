@@ -2,9 +2,7 @@ package be.fkunnen.aoc2017.day4;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
-import static com.sun.deploy.util.StringUtils.join;
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.joining;
 
