@@ -1,4 +1,4 @@
-package day2;
+package be.fkunnen.aoc2017.day2;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;

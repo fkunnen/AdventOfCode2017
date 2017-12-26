@@ -1,4 +1,4 @@
-package day1;
+package be.fkunnen.aoc2017.day1;
 
 import java.util.Arrays;
 import java.util.List;
