@@ -27,8 +27,8 @@ public class Day5 {
         return steps;
     }
 
-    private List<Integer> parseInputToAListOfNumbers(String number){
-        return Arrays.stream(number.split("\n"))
+    private List<Integer> parseInputToAListOfNumbers(String input){
+        return Arrays.stream(input.split("\n"))
                 .map(Integer::valueOf)
                 .collect(Collectors.toList());
     }
