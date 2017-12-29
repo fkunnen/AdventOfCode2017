@@ -7,7 +7,6 @@ public class Day9_2 {
 
     public int streamProcessing(String input) {
         String withoutEscapedCharacters = input.replaceAll("!.", "");
-        System.out.println(withoutEscapedCharacters);
 
         Pattern pattern = Pattern.compile("<(.*?)>");
         Matcher matcher = pattern.matcher(withoutEscapedCharacters);

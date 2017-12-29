@@ -13,7 +13,7 @@ public class Day9 {
     }
 
     private int sumGroups(String brackets, int sum, int level, int character){
-        if (character >= brackets.length()){
+        if (character == brackets.length()){
             return sum;
         }
 
