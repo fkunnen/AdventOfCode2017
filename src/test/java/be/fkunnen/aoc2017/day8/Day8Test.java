@@ -3,21 +3,11 @@ package be.fkunnen.aoc2017.day8;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
 public class Day8Test {
 
     private Day8 day8 = new Day8();
-
-    @Test
-    public void name() throws ScriptException {
-        ScriptEngineManager mgr = new ScriptEngineManager();
-        ScriptEngine engine = mgr.getEngineByName("JavaScript");
-        String foo = "10 < 1";
-        System.out.println(engine.eval(foo));
-    }
 
     @Test
     public void registers_example() throws ScriptException {
@@ -1036,6 +1026,6 @@ public class Day8Test {
                         "zrn inc -255 if ba < -1363\n" +
                         "ax dec 329 if ga <= 3826";
 
-        System.out.println(day8.registers(input));
+        System.out.println("Day 8 part 1: " + day8.registers(input));
     }
 }

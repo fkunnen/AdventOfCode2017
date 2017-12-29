@@ -1028,6 +1028,6 @@ public class Day8_2Test {
                         "zrn inc -255 if ba < -1363\n" +
                         "ax dec 329 if ga <= 3826";
 
-        System.out.println(day8_2.registers(input));
+        System.out.println("Day 8 part 2: " + day8_2.registers(input));
     }
 }
