@@ -16,7 +16,7 @@ public class Program {
     }
 
     public Set<Program> getAllConnectedPrograms(){
-        return getAllConnectedPrograms(new HashSet<Program>());
+        return getAllConnectedPrograms(new HashSet<>());
     }
 
     private Set<Program> getAllConnectedPrograms(Set<Program> alreadyConnectedPrograms) {

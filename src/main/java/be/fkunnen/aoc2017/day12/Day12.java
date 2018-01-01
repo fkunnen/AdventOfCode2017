@@ -10,8 +10,6 @@ import static java.util.stream.Collectors.toMap;
 
 public class Day12 {
 
-    //"0 <-> 889, 1229, 1736\n"
-
     public int digitalPlumber(String input) {
         Map<String, Program> nameToProgramsMap = extractPrograms(input);
         addConnectedPrograms(nameToProgramsMap, input);
