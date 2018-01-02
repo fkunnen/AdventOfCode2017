@@ -18,7 +18,7 @@ public class Day13_2 {
         while (isCaught) {
             isCaught = false;
             for (int depth = 0; depth < numberOfLayers; depth++) {
-                Integer range = depthToRangeMap.get(depth);
+                int range = depthToRangeMap.get(depth);
                 if (isCaught(depth + delay, range)) {
                     isCaught = true;
                     delay++;
@@ -30,7 +30,7 @@ public class Day13_2 {
         return delay;
     }
 
-    private boolean isCaught(int depth, Integer range) {
+    private boolean isCaught(int depth, int range) {
         return range > 0 && depth % (2 * (range-1)) == 0;
     }
 
